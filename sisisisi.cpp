@@ -1,0 +1,31 @@
+#include <iostream> // Solicitar biblioteca
+using namespace std;
+
+int main()
+{
+	int numero; // Variable del numero ingresado
+	int resultado; // Variable del resultado final
+	cout << "Este programa hace el numero factorial que ingrese" << endl; // Presentacion
+	cout << endl; // Separacion
+	cout << "Ingrese el numero factorial: "; // Pedirle al usuario que ingrese el numero
+	cin >> numero; // Dato guardado en variable
+	if(numero < 1) // Si el numero es menor a 0
+	{
+		cout << endl; // Separacion
+		cout << "El numero ingresado no puede ser menor a 1, el programa se volvera a iniciar"; // Aviso de que se volvera a iniciar el programa
+		return main(); // Volver a iniciar el programa
+	}
+	int numero_ingresado = numero; // Variable de cuantas veces se repetira el ciclo
+	float factorial = numero_ingresado; // Variable del factorial
+	for(int i = 1; i < numero_ingresado ; i++) // Ciclo repetitivo
+	{
+		float resultado2 = numero; // Variable que guarda el resultado del numero anterior
+		factorial = factorial - 1; // Operacion que hace que el factorial baje un numero
+		numero = numero * factorial; // Procedimiento de que el numero se multiplica
+		resultado = numero; // Dato guardado del resultado
+		cout << endl; // Separacion
+		cout << resultado2 << " x " << factorial << " = " << resultado; // Resultado y calculo expresado en pantalla
+	}
+	cout << endl; // Separacion
+	cout << "El numero final es de: " << resultado; // Resultado final expresado en pantalla
+}
