@@ -28,4 +28,5 @@ int main()
 	}
 	cout << endl; // Separacion
 	cout << "El numero final es de: " << resultado; // Resultado final expresado en pantalla
+	return 0;
 }
