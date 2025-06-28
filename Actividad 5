@@ -34,66 +34,66 @@ int main()
 				cin >> opcion; // Dato guardado de la opcion en variable
 				break; // Fin del caso 1
 				
-			case 2:
-				cout << endl;
-				cout << "Saldo a depositar: ";
-				cin >> dinero_ingresado;
-				cout << endl;
-				saldo = saldo + dinero_ingresado;
-				cout << "Su nuevo saldo es de: " << saldo << endl << endl;
-				cout << "Que opcion quieres realizar ahora? ";
-				cout << endl;
-				cout << "1- Consultar saldo" << endl;
-				cout << "2- Depositar dinero" << endl;
-				cout << "3- Retirar dinero" << endl;
-				cout << "4- Salir" << endl;
-				cout << "Opcion elegida: ";
-				cin >> opcion;
-				break;
+			case 2: // Caso 2
+				cout << endl; // Separacion
+				cout << "Saldo a depositar: "; // Pedirle al usuario que indique cuando saldo va a depositar
+				cin >> dinero_ingresado; // Dato del dinero ingresado guardado en variable
+				cout << endl; // Separacion
+				saldo = saldo + dinero_ingresado; // Calculo para realizar el nuevo saldo y guardado en la variable
+				cout << "Su nuevo saldo es de: " << saldo << endl << endl; // Nuevo saldo expresado en pantalla
+				cout << "Que opcion quieres realizar ahora? "; // Pedirle al usuario que elija otra opcion
+				cout << endl; // Separacion
+				cout << "1- Consultar saldo" << endl; // Opcion 1
+				cout << "2- Depositar dinero" << endl; // Opcion 2
+				cout << "3- Retirar dinero" << endl; // Opcion 3
+				cout << "4- Salir" << endl; // Opcion 4
+				cout << "Opcion elegida: "; // Opcion elegida mostrada en pantalla
+				cin >> opcion; // Dato guardado de la opcion
+				break; // Fin del caso 2
 				
-			case 3:
-				cout << endl;
-				cout << "Saldo a retirar: ";
-				cin >> cantidad_a_retirar;
-				cout << endl;
-				if(saldo < cantidad_a_retirar)
+			case 3: // Caso 3
+				cout << endl; // Separacion
+				cout << "Saldo a retirar: "; // Pedirle al usuario cuando saldo va a retirar
+				cin >> cantidad_a_retirar; // Dato guardado de la cantidad a retirar
+				cout << endl; // Separacion
+				if(saldo < cantidad_a_retirar) // Si la cantidad a retirar es mayor a el saldo no va a restar nada al saldo
 				{
-					cout << "No tienes saldo suficiente, tu saldo es de: " << saldo << endl;
+					cout << "No tienes saldo suficiente, tu saldo es de: " << saldo << endl; // Indicarle al usuario que no tiene saldo suficiente
 				}
-				else if(saldo > cantidad_a_retirar)
+				else if(saldo > cantidad_a_retirar) // Si el saldo es mayor al saldo a retirar
 				{
-					saldo = saldo - cantidad_a_retirar;
-					cout << "Se ha retirado " << cantidad_a_retirar << " exitosamente" << endl;
-					cout << "Su nuevo saldo es de: " << saldo << endl << endl;;
+					saldo = saldo - cantidad_a_retirar; // Calculo del saldo nuevo restandole la cantidad retirada
+					cout << "Se ha retirado " << cantidad_a_retirar << " exitosamente" << endl; // Avisandole al usuario que se ha retirado esa cantidad correctamente
+					cout << "Su nuevo saldo es de: " << saldo << endl << endl; // Nuevo saldo expresado en pantalla
 				}
-				cout << "Que opcion quieres realizar ahora? ";
-				cout << endl;
-				cout << "1- Consultar saldo" << endl;
-				cout << "2- Depositar dinero" << endl;
-				cout << "3- Retirar dinero" << endl;
-				cout << "4- Salir" << endl;
-				cout << "Opcion elegida: ";
-				cin >> opcion;
-				break;
+				cout << "Que opcion quieres realizar ahora? "; // Pedirle al usuario que elija otra opcion
+				cout << endl; // Separacion
+				cout << "1- Consultar saldo" << endl; // Opcion 1
+				cout << "2- Depositar dinero" << endl; // Opcion 2
+				cout << "3- Retirar dinero" << endl; // Opcion 3
+				cout << "4- Salir" << endl; // Opcion 4
+				cout << "Opcion elegida: "; // Opcion elegida mostrada en pantalla
+				cin >> opcion; // Dato guardado de la opcion en variable
+				break; // Fin del caso 3
 			
 			case 4:
-				cout << endl;
+				cout << endl; // Separacion
 				cout << "Has salido exitosamente";
-				salir = 0;
-				return 0;
-				break;
+				salir = 0; // Salir se vuelve 0 por lo tanto el ciclo termina
+				return 0; // Devuelve 0 haciendo que todo ande correctamente
+				break; // Fin del caso 4
 			
 			default:
-				cout << endl;
+				cout << endl; // Separacion
 				cout << "Porfavor ingrese uno de las 4 posibilidades" << endl;
-				cout << "1- Consultar saldo" << endl;
-				cout << "2- Depositar dinero" << endl;
-				cout << "3- Retirar dinero" << endl;
-				cout << "4- Salir" << endl;
-				cout << "Opcion elegida: ";
-				cin >> opcion;
-				break;
+				cout << "1- Consultar saldo" << endl; // Opcion 1
+				cout << "2- Depositar dinero" << endl; // Opcion 2
+				cout << "3- Retirar dinero" << endl; // Opcion 3
+				cout << "4- Salir" << endl; // Opcion 4
+				cout << "Opcion elegida: "; // Opcion elegida mostrada en pantalla
+				cin >> opcion; // Dato guardado de la opcion en variable
+				break; // Fin del "caso 5"
 		}
 	}
-	return 0;
+	return 0; // Fin de la funcion devolviendo 0
 }
