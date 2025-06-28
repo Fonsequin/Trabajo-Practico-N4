@@ -85,7 +85,7 @@ int main()
 			
 			default:
 				cout << endl; // Separacion
-				cout << "Porfavor ingrese uno de las 4 posibilidades" << endl;
+				cout << "Porfavor ingrese uno de las 4 posibilidades" << endl; // Pedirle al usuario que elija otra opcion
 				cout << "1- Consultar saldo" << endl; // Opcion 1
 				cout << "2- Depositar dinero" << endl; // Opcion 2
 				cout << "3- Retirar dinero" << endl; // Opcion 3
