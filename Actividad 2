@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int numero;
+    cout << "Programa para hacer triangulos o cuadrados con asteriscos";
+    cout << endl;
+    cout << "Ingrese el numero entero: ";
+    cin >> numero;
+    cout << endl;
+    for(int i; i < numero; i++)
+    {
+        for(int j = 0; j < numero; j++)
+    	{
+    		cout << "*";
+		}
+		cout << endl;
+    }
+    return 0;
+}
