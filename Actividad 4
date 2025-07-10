@@ -1,28 +1,28 @@
-#include <iostream>
+#include <iostream> // Solicitar biblioteca
 using namespace std;
 
 int main()
 {
-    int cantidad;
-    string nombre;
-    int ventas;
-    int suma_total;
+    int cantidad; // Variable de la cantidad de vendedores
+    string nombre; // Variable del nombre
+    int ventas; // Variable de ventas
+    int suma_total; // Variable de la suma total de ventas
     
     cout << "Sistema de ventas" << endl;
-    cout << endl;
+    cout << endl; // Separacion
     cout << "Primero ingrese la cantidad total de vendedores: ";
     cin >> cantidad;
-    cout << endl;
+    cout << endl; // Separacion
     for(int i; i < cantidad; i + 1)
     {
-        cout << "Ingrese el nombre del vendedor: ";
-        cin >> nombre;
-        cout << "Ahora ingrese su numero de ventas: ";
-        cin >> ventas;
-        suma_total = suma_total + ventas;
-        cout << nombre << ": " << ventas << " ventas";
-        cout << endl << endl;
+        cout << "Ingrese el nombre del vendedor: "; // Pedirle al usuario el nombre
+        cin >> nombre; // Dato del nombre guardado e nvariable
+        cout << "Ahora ingrese su numero de ventas: "; // Pedirle al usuario las ventas
+        cin >> ventas; // Dato de la venta guardado en variable
+        suma_total = suma_total + ventas; // Calculo de la suma total
+        cout << nombre << ": " << ventas << " ventas"; // Nombre y ventas totales expresado en pantalla
+        cout << endl << endl; // Separacion
     }
-    cout << "El numero total de ventas es de: " << ventas;
+    cout << "El numero total de ventas es de: " << ventas; // Cantidad de ventas total
     return 0;
 }
