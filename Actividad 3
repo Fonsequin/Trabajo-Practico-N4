@@ -1,0 +1,22 @@
+#include <iostream> // Solicitar biblioteca
+using namespace std;
+
+int main()
+{
+    int numero; // Variable del numero
+    int multiplicador; // Variable del multiplicador
+    float resultado; // Variable del resultado
+    cout << "Programa para hacer triangulos o cuadrados con asteriscos"; // Presentacion
+    cout << endl; // Separacion
+    cout << "Ingrese el numero entero: "; // Pedirle al usuario que ingrese el numero
+    cin >> numero; // Dato del numero guardado en variable
+    cout << endl; // Separacion
+    for(int j; j <= numero; j++)
+   	{
+		  multiplicador = multiplicador + 1; // A la multiplicacion se le suma 1
+    	resultado = numero * multiplicador; // Realizacion del resultado
+    	cout << numero << " x " << multiplicador << " = " << resultado; // Procedimiento expresado en pantalla
+    	cout << endl; // Separacion
+	}
+    return 0; // Fin de la funcion
+}
