@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int cantidad;
+    string nombre;
+    int ventas;
+    int suma_total;
+    
+    cout << "Sistema de ventas" << endl;
+    cout << endl;
+    cout << "Primero ingrese la cantidad total de vendedores: ";
+    cin >> cantidad;
+    cout << endl;
+    for(int i; i < cantidad; i + 1)
+    {
+        cout << "Ingrese el nombre del vendedor: ";
+        cin >> nombre;
+        cout << "Ahora ingrese su numero de ventas: ";
+        cin >> ventas;
+        suma_total = suma_total + ventas;
+        cout << nombre << ": " << ventas << " ventas";
+        cout << endl << endl;
+    }
+    cout << "El numero total de ventas es de: " << ventas;
+    return 0;
+}
