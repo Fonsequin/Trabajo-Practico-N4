@@ -1,21 +1,21 @@
-#include <iostream>
+#include <iostream> // Solicitar biblioteca
 using namespace std;
 
 int main()
 {
-    int numero;
-    cout << "Programa para hacer triangulos o cuadrados con asteriscos";
-    cout << endl;
-    cout << "Ingrese el numero entero: ";
-    cin >> numero;
-    cout << endl;
+    int numero; // Variable del numero
+    cout << "Programa para hacer triangulos o cuadrados con asteriscos"; // Presentacion
+    cout << endl; // Separacion
+    cout << "Ingrese el numero entero: "; // Pedirle al usuario que ingrese el numero entero
+    cin >> numero; // Dato guardado del numero guardado en variable
+    cout << endl; // Separacion
     for(int i; i < numero; i++)
     {
         for(int j = 0; j < numero; j++)
     	{
-    		cout << "*";
+    		cout << "*"; // Imprimir un asterisco
 		}
-		cout << endl;
+		cout << endl; // Separacion
     }
-    return 0;
+    return 0; // Fin de la funcion
 }
